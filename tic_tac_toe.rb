@@ -25,16 +25,6 @@ class Game
 		diag1 = [board[0][0], board[1][1], board[2][2]]
 		diag2 = [board[0][2], board[1][1], board[2][0]]
 
-		# Test
-		# p "This is row1: #{board[0]}"
-		# p "This is row2: #{board[1]}"
-		# p "This is row3: #{board[2]}"
-		# p "This is col1: #{cols[0]}"
-		# p "This is col2: #{cols[1]}"
-		# p "This is col3: #{cols[2]}"
-		# p "This is top-left to bottom-right diagonal: #{diag1}"
-		# p "This is bottom-left to top-right: #{diag2}"
-
 		# Check if the rows in board are ok
 		return "yes" if is_winning_condition_met?(board[0]) || is_winning_condition_met?(board[1]) || is_winning_condition_met?(board[2])
 
